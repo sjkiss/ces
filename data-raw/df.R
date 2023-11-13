@@ -1,0 +1,6 @@
+# x<-seq(1,10,1)
+# y<-seq(1,10,1)
+# df<-data.frame(x,y)
+# write.csv(df, file="data-raw/df.csv")
+df<-read.csv(file="data-raw/df.csv")
+usethis::use_data(df, overwrite=T)
